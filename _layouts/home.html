@@ -18,7 +18,24 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","description":"Inspired by Japanese bento, Airashi Kitchen focuses on homemade, nutritious and balanced recipes, infusing every lunch with love and care.","headline":"Airashi Kitchen","name":"Airashi Kitchen","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Airashi Kitchen" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Airashi Kitchen" />
+  <style>
+    .logo-container {
+      text-align: center; 
+      margin-top: 20px; 
+    }
+    .logo-container img {
+      max-width: 350px; 
+      height: auto;     
+      display: block;  
+      margin: 0 auto;
+    }
+
+  .centered-text {
+    text-align: center;
+}
+  </style>
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Airashi Kitchen</a><nav class="site-nav">
@@ -37,9 +54,14 @@
 <main class="page-content" aria-label="Content">
   <div class="logo-container"><img src="{{ 'assets/images/airashi_logo.PNG' | relative_url }}" alt="Airashi Logo"></div>
       <div class="wrapper">
-        <p>Inspired by Japanese bento, Airashi Kitchen focuses on homemade, nutritious and balanced recipes, infusing every lunch with love and care.</p>
+        <p class="centered-text">Inspired by Japanese bento, Airashi Kitchen focuses on homemade, nutritious and balanced recipes, infusing every lunch with love and care.</p>
         <div class="home">
       </div>
+
+      <div class="image-grid">
+        <img src="{{ 'assets/images/gnocchi_dish.JPG' | relative_url }}" alt="gnocchi_dish">
+      </div>
+      
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
