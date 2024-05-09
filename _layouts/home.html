@@ -34,6 +34,32 @@
   .centered-text {
     text-align: center;
 }
+
+.overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body><header class="site-header" role="banner">
@@ -59,8 +85,26 @@
       </div>
 
       <div class="image-grid">
-        <img src="{{ 'assets/images/gnocchi_dish.JPG' | relative_url }}" alt="gnocchi_dish">
+        <img id="gnocchi-image" src="{{ 'assets/images/gnocchi_dish.JPG' | relative_url }}" alt="gnocchi_dish" onclick="showOverlay()">
       </div>
+      
+      <div id="overlay" class="overlay" onclick="hideOverlay()">
+        <div class="overlay-content">
+          <span class="close-btn" onclick="hideOverlay()">&times;</span>
+          <p>Smoked Bacon Lardon Gnocchi, with a creamy roasted red pepper sauce, topped with parmesan and parsley 🌿</p>
+        </div>
+      </div>
+
+      <script>
+        function showOverlay() {
+          document.getElementById("overlay").style.display = "flex";
+        }
+    
+        function hideOverlay() {
+          document.getElementById("overlay").style.display = "none";
+        }
+      </script>
+      
       
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
