@@ -6,8 +6,13 @@ const closeOverlay = document.getElementById("close-overlay");
 
 const descriptions = {
   "Smoked Bacon Lardon Gnocchi": "Smoked Bacon Lardon Gnocchi, with a creamy roasted red pepper sauce, topped with parmesan and parsley 🌿",
-  "Assorted Sushi Platter": "Assorted Sushi Platter with fresh sashimi, nigiri, and maki rolls 🍣",
-  "Spicy Miso Ramen": "Spicy Miso Ramen with pork chashu, soft-boiled egg, and spring onions 🍜"
+  "South Asian styled lamb": "South Asian styled lamb",
+  "Beef wellington 🇬🇧": "Beef wellington 🇬🇧",
+  "Korean styled sweet chilli crispy fried chicken bibimbap, with boiled rice, a fried egg, carrots and cucumbers 🥒": "Korean styled sweet chilli crispy fried chicken bibimbap, with boiled rice, a fried egg, carrots and cucumbers 🥒",
+  "Korean styled sweet chilli crispy fried chicken bibimbap" : "Korean styled sweet chilli crispy fried chicken bibimbap",
+  "British styled beef wellington, with honey roasted carrots, parsnips, green beans and red peppers 🇬🇧" : "British styled beef wellington, with honey roasted carrots, parsnips, green beans and red peppers 🇬🇧",
+  "Japanese styled salmon teriyaki poke, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚" : "Japanese styled salmon teriyaki poke, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚",
+  "Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚" : "Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚"
 };
 
 images.forEach(image => {
