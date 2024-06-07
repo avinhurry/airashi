@@ -12,7 +12,9 @@ const descriptions = {
   "Korean styled sweet chilli crispy fried chicken bibimbap, with boiled rice, a fried egg, carrots and cucumbers 🥒" : "Korean styled sweet chilli crispy fried chicken bibimbap, with boiled rice, a fried egg, carrots and cucumbers 🥒",
   "British styled beef wellington, with honey roasted carrots, parsnips, green beans and red peppers 🇬🇧" : "British styled beef wellington, with honey roasted carrots, parsnips, green beans and red peppers 🇬🇧",
   "Japanese styled salmon teriyaki poke, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚" : "Japanese styled salmon teriyaki poke, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚",
-  "Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚" : "Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚"
+  "Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚" : "Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚",
+  "Spice herbed orange chicken, with roasted green beans, onions and aubergine 🍆": "Spice herbed orange chicken, with roasted green beans, onions and aubergine 🍆",
+  "Spice herbed orange chicken, with roasted green beans, onions, aubergine and creamy mash potato 🥔" : "Spice herbed orange chicken, with roasted green beans, onions, aubergine and creamy mash potato 🥔", "Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢" : "Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢"
 };
 
 images.forEach(image => {
