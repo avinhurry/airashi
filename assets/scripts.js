@@ -14,7 +14,8 @@ const descriptions = {
   "Japanese styled salmon teriyaki poke, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚" : "Japanese styled salmon teriyaki poke, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚",
   "Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚" : "Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚",
   "Spice herbed orange chicken, with roasted green beans, onions and aubergine 🍆": "Spice herbed orange chicken, with roasted green beans, onions and aubergine 🍆",
-  "Spice herbed orange chicken, with roasted green beans, onions, aubergine and creamy mash potato 🥔" : "Spice herbed orange chicken, with roasted green beans, onions, aubergine and creamy mash potato 🥔", "Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢" : "Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢"
+  "Spice herbed orange chicken, with roasted green beans, onions, aubergine and creamy mash potato 🥔" : "Spice herbed orange chicken, with roasted green beans, onions, aubergine and creamy mash potato 🥔", "Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢" : "Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢", "Bacon pasta salad, with rocket, cherry tomatoes and Parmesan cheese 🧀🥓" : "Bacon pasta salad, with rocket, cherry tomatoes and Parmesan cheese 🧀🥓",
+  "Creamy parsley sweet potato and carrot soup, topped with olive oil, balsamic vinegar, pumpkin seeds, flaxseeds and cheesy flatbread on the side 🥕🍠" : "Creamy parsley sweet potato and carrot soup, topped with olive oil, balsamic vinegar, pumpkin seeds, flaxseeds and cheesy flatbread on the side 🥕🍠"
 };
 
 images.forEach(image => {
