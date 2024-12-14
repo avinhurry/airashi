@@ -59,8 +59,12 @@
       <div class="home"></div>
       <div class="image-grid">
         {% for dish in site.data.dishes %}
-          <img class="image-item" src="{{ dish.src }}" alt="{{ dish.alt }}" onclick="openOverlay('{{ dish.alt }}')">
+          <img class="image-item" src="{{ dish.src }}" alt="{{ dish.alt }}" onclick="expandImage(this)">
         {% endfor %}
+      </div>
+
+      <div class="overlay" id="image-overlay" onclick="closeOverlay()">
+        <img class="expanded-image" id="expanded-image" src="" alt="">
       </div>
     </div>
   </main>
