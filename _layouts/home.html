@@ -56,29 +56,11 @@
     </div>
     <div class="wrapper">
       <p class="centered-text">Homemade, harmoniously balanced and absolutely delicious recipes, infused with love and care.</p>
-      <div class="home">
-      </div>
+      <div class="home"></div>
       <div class="image-grid">
-        <img class="image-item" src="/assets/images/dishes/gnocchi_dish.JPG" alt="Smoked Bacon Lardon Gnocchi">
-        <img class="image-item" src="/assets/images/dishes/south_asian_styled_lamb.jpeg" alt="South Asian styled lamb, mint yoghurt, tomato salad, parata and pakoras 🌶️">
-        <img class="image-item" src="/assets/images/dishes/beef_wellington.jpeg" alt="Beef wellington 🇬🇧">
-        <img class="image-item" src="/assets/images/dishes/chicken_bibimbap.jpeg" alt="Korean styled sweet chilli crispy fried chicken bibimbap, with boiled rice, a fried egg, carrots and cucumbers 🥒">
-        <img class="image-item" src="/assets/images/dishes/british_styled_beef_wellington.jpeg" alt="British styled beef wellington, with honey roasted carrots, parsnips, green beans and red peppers 🇬🇧">
-        <img class="image-item" src="/assets/images//dishes/japanese_styled_salmon_teriyaki_poke.jpeg" alt="Japanese styled salmon teriyaki poke, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚">
-        <img class="image-item" src="/assets/images/dishes/japanese_styled_salmon_teriyaki_poke_bento.jpeg" alt="Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚">
-        <img class="image-item" src="/assets/images/dishes/spiced_herb_orange_chicken.jpg" alt="Spice herbed orange chicken, with roasted green beans, onions and aubergine 🍆">
-        <img class="image-item" src="/assets/images/dishes/spiced_herb_orange_chicken_bento.jpg" alt="Spice herbed orange chicken, with roasted green beans, onions, aubergine and creamy mash potato 🥔">
-        <img class="image-item" src="/assets/images/dishes/chinese_styled_crispy_bbq_pork.jpg" alt="Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢">
-        <img class="image-item" src="/assets/images/dishes/chinese_styled_crispy_bbq_pork_cut.jpg" alt="Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢">
-        <img class="image-item" src="/assets/images/dishes/chinese_styled_crispy_bbq_pork_bento.jpg" alt="Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢">
-        <img class="image-item" src="/assets/images/dishes/bacon_pasta_salad_with_rocket.jpeg" alt="Bacon pasta salad, with rocket, cherry tomatoes and Parmesan cheese 🧀🥓">
-        <img class="image-item" src="/assets/images/dishes/cream_parsley_sweet_potato_and_carrot_soup.jpeg" alt="Creamy parsley sweet potato and carrot soup, topped with olive oil, balsamic vinegar, pumpkin seeds, flaxseeds and cheesy flatbread on the side 🥕🍠">
-      </div>
-      <div id="overlay" class="overlay">
-        <div class="overlay-content">
-          <span class="close-btn" id="close-overlay">&times;</span>
-          <p id="overlay-description"></p>
-        </div>
+        {% for dish in site.data.dishes %}
+          <img class="image-item" src="{{ dish.src }}" alt="{{ dish.alt }}" onclick="openOverlay('{{ dish.alt }}')">
+        {% endfor %}
       </div>
     </div>
   </main>
