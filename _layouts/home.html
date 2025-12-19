@@ -58,7 +58,7 @@
       <p class="centered-text">Homemade, harmoniously balanced and absolutely delicious recipes, infused with love and care.</p>
       <div class="home"></div>
       <div class="image-grid">
-        {% for dish in site.data.dishes %}
+        {% for dish in site.data.dishes.items %}
           <img class="image-item" src="{{ dish.src }}" alt="{{ dish.alt }}" onclick="expandImage(this)">
         {% endfor %}
       </div>

@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: avinhurry/airashi
+  branch: main
+
+publish_mode: simple
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "dishes"
+    label: "Dishes"
+    files:
+      - label: "Dish List"
+        name: "dish_list"
+        file: "_data/dishes.yml"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - label: "Image"
+                name: "src"
+                widget: "image"
+              - label: "Description (alt text)"
+                name: "alt"
+                widget: "string"

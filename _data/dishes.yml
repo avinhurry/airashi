@@ -1,33 +1,33 @@
-- src: /assets/images/dishes/gnocchi_dish.jpeg
-  alt: Smoked Bacon Lardon Gnocchi
-- src: /assets/images/dishes/south_asian_styled_lamb.jpeg
-  alt: South Asian styled lamb, mint yoghurt, tomato salad, parata and pakoras 🌶️
-- src: /assets/images/dishes/beef_wellington.jpeg
-  alt: Beef wellington 🇬🇧
-- src: /assets/images/dishes/chicken_bibimbap.jpeg
-  alt: Korean styled sweet chilli crispy fried chicken bibimbap, with boiled rice, a fried egg, carrots and cucumbers 🥒
-- src: /assets/images/dishes/british_styled_beef_wellington.jpeg
-  alt: British styled beef wellington, with honey roasted carrots, parsnips, green beans and red peppers 🇬🇧
-- src: /assets/images/dishes/japanese_styled_salmon_teriyaki_poke.jpeg
-  alt: Japanese styled salmon teriyaki poke, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚
-- src: /assets/images/dishes/japanese_styled_salmon_teriyaki_poke_bento.jpeg
-  alt: Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚
-- src: /assets/images/dishes/spiced_herb_orange_chicken.jpeg
-  alt: Spice herbed orange chicken, with roasted green beans, onions and aubergine 🍆
-- src: /assets/images/dishes/spiced_herb_orange_chicken_bento.jpeg
-  alt: Spice herbed orange chicken, with roasted green beans, onions, aubergine and creamy mash potato 🥔
-- src: /assets/images/dishes/chinese_styled_crispy_bbq_pork.jpeg
-  alt: Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢
-- src: /assets/images/dishes/chinese_styled_crispy_bbq_pork_cut.jpeg
-  alt: Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢
-- src: /assets/images/dishes/chinese_styled_crispy_bbq_pork_bento.jpeg
-  alt: Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢
-- src: /assets/images/dishes/bacon_pasta_salad_with_rocket.jpeg
-  alt: Bacon pasta salad, with rocket, cherry tomatoes and Parmesan cheese 🧀🥓
-- src: /assets/images/dishes/cream_parsley_sweet_potato_and_carrot_soup.jpeg
-  alt: Creamy parsley sweet potato and carrot soup, topped with olive oil, balsamic vinegar, pumpkin seeds, flaxseeds and cheesy flatbread on the side 🥕🍠
-- src: /assets/images/dishes/egg_royal.jpeg
-  alt: Salmon, spinach, poached egg, topped with hollandaise sauce, on a muffin
-- src: /assets/images/dishes/salmom_avocado_egg_tomatoes_toast.jpeg
-  alt: Salmon, avocado, poached egg and cherry tomatoes on toast, topped with dill, paprika, and chia seeds
-  
+items:
+  - src: /assets/images/dishes/gnocchi_dish.jpeg
+    alt: Smoked Bacon Lardon Gnocchi
+  - src: /assets/images/dishes/south_asian_styled_lamb.jpeg
+    alt: South Asian styled lamb, mint yoghurt, tomato salad, parata and pakoras 🌶️
+  - src: /assets/images/dishes/beef_wellington.jpeg
+    alt: Beef wellington 🇬🇧
+  - src: /assets/images/dishes/chicken_bibimbap.jpeg
+    alt: Korean styled sweet chilli crispy fried chicken bibimbap, with boiled rice, a fried egg, carrots and cucumbers 🥒
+  - src: /assets/images/dishes/british_styled_beef_wellington.jpeg
+    alt: British styled beef wellington, with honey roasted carrots, parsnips, green beans and red peppers 🇬🇧
+  - src: /assets/images/dishes/japanese_styled_salmon_teriyaki_poke.jpeg
+    alt: Japanese styled salmon teriyaki poke, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚
+  - src: /assets/images/dishes/japanese_styled_salmon_teriyaki_poke_bento.jpeg
+    alt: Japanese styled salmon teriyaki poke bento, with pickled ginger, edamame beans, red peppers, asparagus and sesame rice 🍚
+  - src: /assets/images/dishes/spiced_herb_orange_chicken.jpeg
+    alt: Spice herbed orange chicken, with roasted green beans, onions and aubergine 🍆
+  - src: /assets/images/dishes/spiced_herb_orange_chicken_bento.jpeg
+    alt: Spice herbed orange chicken, with roasted green beans, onions, aubergine and creamy mash potato 🥔
+  - src: /assets/images/dishes/chinese_styled_crispy_bbq_pork.jpeg
+    alt: Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢
+  - src: /assets/images/dishes/chinese_styled_crispy_bbq_pork_cut.jpeg
+    alt: Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢
+  - src: /assets/images/dishes/chinese_styled_crispy_bbq_pork_bento.jpeg
+    alt: Chinese styled crispy bbq pork, with pak choi, radish, cucumber, pepper and boiled rice 🥡🥢
+  - src: /assets/images/dishes/bacon_pasta_salad_with_rocket.jpeg
+    alt: Bacon pasta salad, with rocket, cherry tomatoes and Parmesan cheese 🧀🥓
+  - src: /assets/images/dishes/cream_parsley_sweet_potato_and_carrot_soup.jpeg
+    alt: Creamy parsley sweet potato and carrot soup, topped with olive oil, balsamic vinegar, pumpkin seeds, flaxseeds and cheesy flatbread on the side 🥕🍠
+  - src: /assets/images/dishes/egg_royal.jpeg
+    alt: Salmon, spinach, poached egg, topped with hollandaise sauce, on a muffin
+  - src: /assets/images/dishes/salmom_avocado_egg_tomatoes_toast.jpeg
+    alt: Salmon, avocado, poached egg and cherry tomatoes on toast, topped with dill, paprika, and chia seeds
