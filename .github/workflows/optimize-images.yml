@@ -64,13 +64,57 @@ jobs:
           fetch-depth: 0
           clean: true
 
-      - name: Optimize images with Sharp
-        uses: calibreapp/image-actions@main
+      - name: Collect changed images
+        shell: bash
+        run: |
+          set -euo pipefail
+          list="$RUNNER_TEMP/changed-images.txt"
+          : > "$list"
+          before="${{ github.event.before }}"
+          after="$(git rev-parse HEAD)"
+          if [[ -z "$before" || "$before" =~ ^0+$ ]] || ! git cat-file -e "${before}^{commit}" 2>/dev/null; then
+            git ls-files -z > "$list"
+          else
+            git diff --name-only -z "$before" "$after" > "$list"
+          fi
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          maxWidth: 1600
-          jpegQuality: 82
-          pngQuality: 82
-          webpQuality: 82
-          ignorePaths: |
-            assets/images/favicon/**
+          node-version: 20
+
+      - name: Install Sharp
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --prefix "$RUNNER_TEMP/sharp" sharp@0.33.5
+
+      - name: Optimize images
+        shell: bash
+        env:
+          NODE_PATH: ${{ runner.temp }}/sharp/node_modules
+        run: |
+          set -euo pipefail
+          node scripts/optimize_images.js \
+            --root assets/images \
+            --max-width 1600 \
+            --jpeg-quality 82 \
+            --png-quality 82 \
+            --webp-quality 82 \
+            --ignore assets/images/favicon \
+            --file-list "$RUNNER_TEMP/changed-images.txt"
+
+      - name: Commit optimized images
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "No optimized images to commit."
+            exit 0
+          fi
+          git pull --rebase origin main
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Optimize images"
+          git push origin HEAD:main
