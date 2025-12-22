@@ -1,0 +1,27 @@
+name: Optimize images
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "assets/images/**"
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Optimize images with Sharp
+        uses: calibreapp/image-actions@v3
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          maxWidth: 1600
+          jpegQuality: 82
+          pngQuality: 82
+          webpQuality: 82
+          ignorePaths: |
+            assets/images/favicon/**
