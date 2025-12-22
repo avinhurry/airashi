@@ -2,6 +2,8 @@ backend:
   name: github
   repo: hurrystudios/airashi
   branch: main
+  site_domain: airashi.hurrystudios.com
+
 publish_mode: simple
 
 media_folder: "assets/images"
