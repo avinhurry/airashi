@@ -65,7 +65,7 @@ jobs:
           clean: true
 
       - name: Optimize images with Sharp
-        uses: calibreapp/image-actions@v1.1.1
+        uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           maxWidth: 1600
