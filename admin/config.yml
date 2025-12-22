@@ -2,9 +2,6 @@ backend:
   name: github
   repo: hurrystudios/airashi
   branch: main
-  base_url: https://airashi-oauth.netlify.app
-  auth_endpoint: /.netlify/functions/auth
-
 publish_mode: simple
 
 media_folder: "assets/images"
