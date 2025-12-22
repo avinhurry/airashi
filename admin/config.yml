@@ -4,8 +4,8 @@ backend:
 
 publish_mode: simple
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
+media_folder: "assets/images/dishes"
+public_folder: "/assets/images/dishes"
 
 collections:
   - name: "dishes"
