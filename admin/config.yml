@@ -2,7 +2,8 @@ backend:
   name: github
   repo: hurrystudios/airashi
   branch: main
-  site_id: d22fb07c-79dd-4fb8-9f3b-e0730cdfaeff
+  base_url: https://effortless-florentine-922ee8.netlify.app
+  auth_endpoint: /.netlify/functions/auth
 
 publish_mode: simple
 
