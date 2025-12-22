@@ -2,6 +2,7 @@ backend:
   name: github
   repo: hurrystudios/airashi
   branch: main
+  site_id: d22fb07c-79dd-4fb8-9f3b-e0730cdfaeff
 
 publish_mode: simple
 
