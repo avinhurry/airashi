@@ -46,7 +46,7 @@ jobs:
           if git diff --quiet; then
             echo "No HEIC-related changes to commit."
           else
-            git pull --rebase origin main
+            git pull --rebase --autostash origin main
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add -A
@@ -112,7 +112,7 @@ jobs:
             echo "No optimized images to commit."
             exit 0
           fi
-          git pull --rebase origin main
+          git pull --rebase --autostash origin main
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
