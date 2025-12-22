@@ -1,13 +1,27 @@
 name: Optimize images
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths:
-      - "assets/images/**"
+      - "assets/images/**/*.jpg"
+      - "assets/images/**/*.jpeg"
+      - "assets/images/**/*.png"
+      - "assets/images/**/*.webp"
+      - "assets/images/**/*.heic"
+      - "assets/images/**/*.heif"
+
+concurrency:
+  group: optimize-images
+  cancel-in-progress: true
+
+permissions:
+  contents: write
 
 jobs:
   optimize:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -15,8 +29,43 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Convert HEIC to JPEG (and update references)
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y libheif-examples
+          ruby scripts/convert_heic.rb
+
+      - name: Commit HEIC conversions
+        id: commit_heic
+        shell: bash
+        run: |
+          set -euo pipefail
+          committed=false
+          if git diff --quiet; then
+            echo "No HEIC-related changes to commit."
+          else
+            git pull --rebase origin main
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Convert HEIC images to JPEG"
+            git push origin HEAD:main
+            committed=true
+          fi
+          echo "committed=${committed}" >> "$GITHUB_OUTPUT"
+
+      - name: Refresh checkout after HEIC commit
+        if: steps.commit_heic.outputs.committed == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          clean: true
+
       - name: Optimize images with Sharp
-        uses: calibreapp/image-actions@v3
+        uses: calibreapp/image-actions@5cebe639f7d858efc47a9eb2ce9b3e95f4d1f578 # v3
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           maxWidth: 1600
